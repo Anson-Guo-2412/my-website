@@ -1,0 +1,91 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background: #222;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+nav a {
+  color: #fff;
+  margin-right: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+h2, h3 {
+  color: #222;
+  margin: 20px 0 10px 0;
+}
+
+form {
+  margin: 20px;
+}
+
+input[type="text"],
+select {
+  padding: 6px;
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 6px 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.anime-card {
+  background: #fff;
+  border-radius: 6px;
+  padding: 10px;
+  margin: 10px 0;
+  display: flex;
+  gap: 20px;
+}
+
+.anime-card img {
+  width: 120px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.episode-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.episode-box {
+  width: 60px;
+  padding: 10px;
+  background: #333;
+  color: #eee;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 14px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.episode-box:hover {
+  background: #5b2baf;
+  color: #fff;
+}
+
+.episode-box.active {
+  background: #8000ff;
+  color: #fff;
+}
