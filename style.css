@@ -1,0 +1,5 @@
+body { font-family: Arial; padding: 20px; background: #f9f9f9; }
+h1, h2, h3 { color: #333; }
+nav a { margin-right: 10px; text-decoration: none; color: blue; }
+form textarea { width: 100%; height: 80px; }
+video { margin: 10px 0; }

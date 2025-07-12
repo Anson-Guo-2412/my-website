@@ -1,0 +1,146 @@
+/* === Reset & Base === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f6f9;
+  color: #333;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #4a4acf;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* === Header & Nav === */
+header {
+  background-color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+header h1 a {
+  color: #222;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  margin-right: 15px;
+  font-weight: bold;
+  color: #4a4acf;
+}
+
+/* === Form Elements === */
+form {
+  margin: 20px 0;
+}
+
+input, select, textarea, button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+button {
+  background-color: #4a4acf;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 6px;
+  width: auto; /* ❗ Kunci agar tidak full width */
+  white-space: nowrap;
+}
+
+
+button:hover {
+  background-color: #3a3abe;
+}
+
+/* === Anime List / Cards === */
+.anime-card {
+  display: flex;
+  gap: 16px;
+  padding: 12px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  margin-bottom: 16px;
+  align-items: center;
+}
+
+.anime-card img {
+  width: 120px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.anime-card div {
+  flex: 1;
+}
+
+.anime-card small {
+  color: #666;
+}
+
+/* === Section Titles === */
+h2, h3 {
+  margin: 20px 0 10px;
+  color: #222;
+}
+
+/* === Comment Box === */
+.comment-box {
+  background: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.comment-box b {
+  color: #444;
+}
+
+/* === Admin Dashboard List === */
+.admin-list li {
+  margin: 8px 0;
+}
+
+/* === Video Player === */
+video {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .anime-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .anime-card img {
+    width: 100%;
+    height: auto;
+  }
+}
